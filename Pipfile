@@ -11,6 +11,9 @@ matplotlib = "*"
 seaborn = "*"
 scikit-learn = "*"
 tensorflow = "*"
+imblearn = "*"
+pydot = "*"
+graphviz = "*"
 
 [dev-packages]
 
