@@ -11,5 +11,7 @@ def app():
     st.image('SVR.png')
     
     st.write("Two error metrics have been used for evaluating and reporting the performance of Support Vector Regression")
-    st.write("mean absolute error: 10.23561709468476")
-    st.write("mean squared error: 140.8668354505676")
+    a_file = open("SVR.txt")
+    lines = a_file.readlines()
+    for line in lines:
+        st.write(line)

@@ -14,12 +14,12 @@ def app():
 
     #clusters
     st.write("# Clusterings ")
-    st.write('Clustering is the task of dividing the population or data points into a number of groups such that data points in the same groups are more similar to other data points in the same group than those in other groups. In simple words, the aim is to segregate groups with similar traits and assign them into clusters.')
+    st.write('Clustering is the process of splitting a population or set of data points into many groups so that data points in the same group are more similar than data points in other groups. To put it another way, the goal is to separate groups with similar characteristics and assign them to clusters.')
     st.write('The clustering technique we used for our analysis is **K-Means Clustering**, we attempted to make use of the location data to cluster the data.')
     st.image(['Coordinate.png','K-Means.png'])
 
-    st.write("# Associations ")
-    st.write('Association rule mining is finding frequent patterns, associations, correlations, or causal structures among sets of items or objects in transaction databases, relational databases, and other information repositories.')
+    st.write("# Associations Rule Mining")
+    st.write('In transaction databases, relational databases, and other information repositories, association rule mining is the discovery of common patterns, relationships, correlations, or causal structures among collections of items or objects.')
     st.write('We used **Apriori Algorithm**, for our purpose.')
     st.image(['Apriori.png', 'Apriori1.png'])
     st.image(['Apriori2.png', 'Apriori3.png', 'Apriori4.png'])
