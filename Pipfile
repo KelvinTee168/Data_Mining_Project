@@ -15,6 +15,7 @@ pydot = "*"
 graphviz = "*"
 streamlit = "*"
 apyori = "*"
+keras = "*"
 
 [dev-packages]
 
