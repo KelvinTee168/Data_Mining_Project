@@ -14,8 +14,22 @@ def app():
     df1 = pd.read_csv('BASKETS_NB_Report.csv', index_col=0)
     st.dataframe(df1)
     
+    st.write("The Accuracy and Confusion Matrix are shown as below:")
+    a_file = open("BASKETS_NB_ACC.txt")
+    lines = a_file.readlines()
+    for line in lines:
+        st.write(line)
+    st.write("\n")
+    
     st.write("The graph below is the ROC Curve of Naive Bayes Classifier.")
     st.image('BASKETS_NB_ROC.png')
+    
+    st.write("The AUC for all classes are shown as below:")
+    a_file = open("BASKETS_NB_AUC.txt")
+    lines = a_file.readlines()
+    for line in lines:
+        st.write(line)
+    st.write("\n")
     
     st.write("### Age_Range")
     
@@ -23,5 +37,18 @@ def app():
     df1 = pd.read_csv('AGE_NB_Report.csv', index_col=0)
     st.dataframe(df1)
     
+    st.write("The Accuracy and Confusion Matrix are shown as below:")
+    a_file = open("AGE_NB_ACC.txt")
+    lines = a_file.readlines()
+    for line in lines:
+        st.write(line)
+    st.write("\n")
+    
     st.write("The graph below is the ROC Curve of Naive Bayes Classifier.")
     st.image('AGE_NB_ROC.png')
+    
+    st.write("The AUC for all classes are shown as below:")
+    a_file = open("AGE_NB_AUC.txt")
+    lines = a_file.readlines()
+    for line in lines:
+        st.write(line)
