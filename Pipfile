@@ -15,6 +15,7 @@ imblearn = "*"
 pydot = "*"
 graphviz = "*"
 streamlit = "*"
+apyori = "*"
 
 [dev-packages]
 
