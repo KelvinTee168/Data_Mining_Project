@@ -24,6 +24,8 @@ def load_model():
 
 def app():
     st.title("Model Playground")
+    st.write("Please enter your own values in the fields and see the predictions below.")
+    st.write("Note : the values of Date, Time, Longitude and Latitude are choses at random everytime you enter a new value. This is because these fields have way too many unique values which makes it really hard to list.")
     loaded_model = load_model()
     mapl = get_mapl()
     lmap = get_lmap()
@@ -71,6 +73,10 @@ def app():
     pred_data['latitude'] = mapl['latitude'][lat_list[laid]]
     pred_data['longitude'] = mapl['longitude'][lon_list[loid]]
 
+    st.write("Date : ", date_list[rid])
+    st.write("Time : ", time_list[tid])
+    st.write("Latitude : ", lat_list[laid])
+    st.write("Longitude : ", lon_list[laid])
     df = pd.DataFrame.from_records(data=[pred_data])
     pred = loaded_model.predict(df)
     st.write("## Prediction")
