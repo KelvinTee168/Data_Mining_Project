@@ -11,6 +11,7 @@ import NB
 import RFC
 import KNN
 import NeuralNet
+import playground
 
 st.set_page_config(page_title='What\'s interesting about a Laundry Shop?', page_icon=None, layout="wide",
                     initial_sidebar_state="auto", menu_items=None)
@@ -23,6 +24,7 @@ PAGES = {
     "Models - Classification (RFC)" : RFC,
     "Models - Classification (KNN)" : KNN,
     "Models - Classification (NN)" : NeuralNet,
+    "Live Prediction Playground" : playground
 }
 st.sidebar.title('The Data Mining Process')
 selection = st.sidebar.radio("Go to", list(PAGES.keys()))
