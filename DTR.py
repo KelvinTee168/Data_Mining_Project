@@ -11,8 +11,11 @@ def app():
     st.image('DTR.png')
     
     st.write("Two error metrics have been used for evaluating and reporting the performance of Decision Tree Regression")
-    st.write("mean absolute error: 10.615990425769281")
-    st.write("mean squared error: 159.13845860392246")
+    a_file = open("DTR.txt")
+    lines = a_file.readlines()
+    for line in lines:
+        st.write(line)
+    st.write('\n')
     
     st.write("The graph below shown us the value of MAE when the max_depth increases")
     st.image('depth_vs_mae.png')
