@@ -15,3 +15,13 @@ def app():
     lines = a_file.readlines()
     for line in lines:
         st.write(line)
+    st.write('\n')
+    
+    st.write("The graph below shown us the value of MAE when the gamma increases")
+    st.image('gamma_vs_mae.png')
+    
+    st.write("The graph below shown us the value of MAE when the C increases")
+    st.image('c_vs_mae.png')
+    
+    st.write("The graph below shown us the value of MAE when the degree increases")
+    st.image('degree_vs_mae.png')
