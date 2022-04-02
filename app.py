@@ -19,25 +19,24 @@ import numpy as np
 # import q14
 import home
 import eda
+import SVR
+import DTR
+import NB
+import RFC
+import KNN
+import NeuralNet
 
 st.set_page_config(page_title='What\'s interesting about a Laundry Shop?', page_icon=None, layout="wide",
                     initial_sidebar_state="auto", menu_items=None)
 PAGES = {
     "Home" : home,
-    "Exploratory Data Analyis" : eda
-    # "Question 2": q2,
-    # "Question 3": q3,
-    # "Question 4": q4,
-    # "Question 5": q5,
-    # "Question 6": q6,
-    # "Question 7": q7,
-    # "Question 8": q8,
-    # "Question 9": q9,
-    # "Question 10": q10,
-    # "Question 11": q11,
-    # "Question 12": q12,
-    # "Question 13": q13,
-    # "Question 14": q14
+    "Exploratory Data Analyis" : eda,
+    "Models - Regression (SVR) ": SVR,
+    "Models - Regression (DecisionTree)": DTR,
+    "Models - Classification (NB)" : NB,
+    "Models - Classification (RFC)" : RFC,
+    "Models - Classification (KNN)" : KNN,
+    "Models - Classification (NN)" : NeuralNet,
 }
 st.sidebar.title('The Data Mining Process')
 selection = st.sidebar.radio("Go to", list(PAGES.keys()))
