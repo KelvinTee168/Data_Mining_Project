@@ -10,12 +10,12 @@ pandas = "*"
 matplotlib = "*"
 seaborn = "*"
 scikit-learn = "*"
-tensorflow = "*"
 imblearn = "*"
 pydot = "*"
 graphviz = "*"
 streamlit = "*"
 apyori = "*"
+keras = "*"
 
 [dev-packages]
 
