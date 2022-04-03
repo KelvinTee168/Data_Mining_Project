@@ -41,4 +41,12 @@ def app():
     st.write('# Correlation between variables')
     st.write('The heatmap below shows us that the correlation between variables. Inside the diagram, it has shown us that the longitude has a very weak correlation with Age_Range and latitude. Other than that, the other variables has no correlation with each other.')
     st.image('Correlation.png')
+    
+    st.write('# Question 1: Is there any relationship between basket size and race?')
+    st.write('In the figure below, we have used the heatmap to show the correlation between basket size and race.')
+    st.image('Race_vs_Size.png')
+    
+    st.write('# Question 2: What types of customers will likely to choose Washer No. 3 and Dryer No. 10')
+    st.write('In the figure below, we have listed down the appearance of customers that would likely to choose Washer No. 3 and Dryer No. 10.')
+    st.image('Customers.png')
 
