@@ -3,6 +3,10 @@ from re import S
 import pandas as pd
 import streamlit as st
 import numpy as np
+#import joblib
+#from sklearn import preprocessing 
+#from sklearn.preprocessing import LabelEncoder
+#from sklearn.model_selection import train_test_split
 
 def app():
     st.write("## Naive Bayes Classifier")
@@ -98,3 +102,14 @@ def app():
     lines = a_file.readlines()
     for line in lines:
         st.write(line)
+    
+    #df = pd.read_csv('cleaned_baskets.csv', index_col=0)
+    #df = df.apply(LabelEncoder().fit_transform)
+    #y = df.Num_of_Baskets
+    #X = df.drop("Num_of_Baskets", 1)
+    
+    #X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 10) 
+    
+    #loaded_model = joblib.load('Baskets_NB.sav')
+    #result = loaded_model.score(X_test, y_test)
+    #print(result)
