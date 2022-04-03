@@ -5,6 +5,7 @@ import numpy as np
 
 import home
 import eda
+import FeatureSelection
 import SVR
 import DTR
 import NB
@@ -17,6 +18,7 @@ st.set_page_config(page_title='What\'s interesting about a Laundry Shop?', page_
 PAGES = {
     "Home" : home,
     "Exploratory Data Analyis" : eda,
+    "Feature Selection": FeatureSelection,
     "Models - Regression (SVR) ": SVR,
     "Models - Regression (DecisionTree)": DTR,
     "Models - Classification (NB)" : NB,
